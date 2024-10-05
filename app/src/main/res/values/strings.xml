@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">selfiesegmentation</string>
+    <string name="output_image">Segmented Output</string>
+
+    <string-array name="segmentation_styles">
+        <item>Grayscale</item>
+        <item>Red Overlay</item>
+        <item>Blue Overlay</item>
+        <item>Green Overlay</item>
+        <item>Inverted Colors</item>
+        <item>Sepia Tone</item>
+        <item>Pixelation</item>
+        <item>Vignette</item>
+        <item>Black and White</item>
+        <item>Brighten</item>
+        <item>Darken</item>
+        <item>Red Tint</item>
+        <item>Green Tint</item>
+        <item>Blue Tint</item>
+        <item>Warm Tone</item>
+        <item>Cold Tone</item>
+        <item>Increase Contrast</item>
+        <item>Blur</item>
+    </string-array>
+</resources>
