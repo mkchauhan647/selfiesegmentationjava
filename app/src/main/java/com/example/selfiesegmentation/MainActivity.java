@@ -99,19 +99,20 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA;
             }
-//            startCamera(); // Restart the camera with the new selector
-            // Request camera permissions
-            if (allPermissionsGranted()) {
-                startCamera();
-            } else {
-                ActivityCompat.requestPermissions(
-                        this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
-                );
-            }
+            startCamera(); // Restart the camera with the new selector
+
         });
 
 
 
+        // Request camera permissions
+        if (allPermissionsGranted()) {
+            startCamera();
+        } else {
+            ActivityCompat.requestPermissions(
+                    this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
+            );
+        }
 
 
         cameraExecutor = Executors.newSingleThreadExecutor();
